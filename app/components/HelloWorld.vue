@@ -1,11 +1,16 @@
 <template>
     <Page class="page">
-        <ActionBar title="JSON example" class="action-bar" />
+        <ActionBar title="NativeScript/Vue.js - Forms" class="action-bar" />
         <RadDataForm :source="album" :metadata="metadata" />
     </Page>
 </template>
 
 <script>
+
+/*
+Ref: http://docs.telerik.com/devtools/nativescript-ui/Controls/NativeScript/DataForm/Validation/dataform-validation-overview#json-metadata
+
+*/
     import Vue from "nativescript-vue";
     import RadDataForm from "nativescript-ui-dataform/vue";
     Vue.use(RadDataForm);
