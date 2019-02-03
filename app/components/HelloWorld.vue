@@ -1,7 +1,11 @@
 <template>
   <Page class="page">
     <ActionBar title="NativeScript/Vue.js - Forms" class="action-bar"/>
-    <RadDataForm :source="employees" :metadata="metadata"/>
+    <StackLayout>
+      <Image src="https://i.stack.imgur.com/tFtk8.png?s=32&g=1" stretch="none"/>
+      <RadDataForm :source="employees" :metadata="metadata"/>
+      <TextField :text="textFieldValue" hint="Enter text..."/>
+    </StackLayout>
   </Page>
 </template>
 
@@ -34,7 +38,8 @@ export default {
           {
             name: "userId",
             index: 0,
-            displayName: "User Id:",
+            readOnly: true,
+            displayName: "User Idxx:",
             hintText: "hint text here"
           },
           {
