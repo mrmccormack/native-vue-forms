@@ -4,7 +4,6 @@
     <StackLayout>
       <Image src="https://i.stack.imgur.com/tFtk8.png?s=32&g=1" stretch="none"/>
       <RadDataForm :source="employees" :metadata="metadata"/>
-      <TextField :text="textFieldValue" hint="Enter text..."/>
     </StackLayout>
   </Page>
 </template>
@@ -27,6 +26,7 @@ export default {
         firstName: "Fred",
         lastName: "Smith",
         city: "",
+        notes: "hello notes",
         phoneNumber: "408-123-4567",
         emailAddress: "fredsmith234@gmail.com",
         owned: true
@@ -48,9 +48,7 @@ export default {
           },
           {
             name: "firstName",
-            index: 2,
-            imageResource:
-              "https://cdn3.iconfinder.com/data/icons/woothemesiconset/32/user.png"
+            index: 2
           },
           {
             name: "lastName",
@@ -86,6 +84,11 @@ export default {
             index: 6,
             editor: "Picker",
             valuesProvider: ["New York", "Washington", "Los Angeles"]
+          },
+          {
+            name: "notes",
+            index: 7,
+            editor: "MultilineText"
           }
         ]
       }
