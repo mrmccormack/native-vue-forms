@@ -17,6 +17,26 @@ The imported CSS rules must precede all other types of rules.
     margin: 15;
 }
 
+/*
+RadDataForm {
+    background-color: #4CAF50;
+    color: #3F51B5;
+    padding: 5;
+    margin: 5;
+    border-color: #303F9F;
+    border-width: 5;
+    border-radius: 5;
+}
+
+
+PropertyEditor {
+    background-color: transparent;
+    separator-color: #303F9F;
+}
+
+*/
+
+
 .description-label{
     margin-bottom: 15;
 }

@@ -24,7 +24,8 @@ export default {
         lastName: "Smith",
         city: "",
         phoneNumber: "408-123-4567",
-        emailAddress: "fredsmith234@gmail.com"
+        emailAddress: "fredsmith234@gmail.com",
+        owned: true
       },
 
       metadata: {
@@ -43,11 +44,12 @@ export default {
           {
             name: "firstName",
             index: 2,
-            imageResource: "https://cdn3.iconfinder.com/data/icons/woothemesiconset/32/user.png"
+            imageResource:
+              "https://cdn3.iconfinder.com/data/icons/woothemesiconset/32/user.png"
           },
           {
             name: "lastName",
-            index: 3,
+            index: 3
           },
           {
             name: "phoneNumber",
@@ -60,9 +62,9 @@ export default {
           {
             name: "city",
             index: 6,
-            "editor": "Picker",
-            "valuesProvider": ["New York", "Washington", "Los Angeles"]
-          },
+            editor: "Picker",
+            valuesProvider: ["New York", "Washington", "Los Angeles"]
+          }
         ]
       }
     };
