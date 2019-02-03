@@ -7,7 +7,7 @@
 
 <script>
 /*
-Ref: http://docs.telerik.com/devtools/nativescript-ui/Controls/NativeScript/DataForm/Validation/dataform-validation-overview#json-metadata
+Ref : http://docs.telerik.com/devtools/nativescript-ui/Controls/NativeScript/DataForm/Validation/dataform-validation-overview#json-metadata
 
 */
 import Vue from "nativescript-vue";
@@ -57,7 +57,16 @@ export default {
           },
           {
             name: "emailAddress",
-            index: 4
+            index: 4,
+            validators: [
+              {
+                name: "RegEx",
+                params: {
+                  regEx: "^[a-zA-Z0-9\\+\\.\\_\\%\\-\\+]{1,256}\\@telerik.com$",
+                  errorMessage: "Please provide your @telerik.com email."
+                }
+              }
+            ]
           },
           {
             name: "city",
