@@ -1,6 +1,17 @@
 <template>
   <Page class="page">
-    <ActionBar title="NativeScript/Vue.js - Forms" class="action-bar"/>
+    <ActionBar>
+      <StackLayout orientation="horizontal">
+        <Image
+          src="https://cdn0.iconfinder.com/data/icons/pinpoint-interface/48/forms-512.png"
+          width="32"
+          height="32"
+          verticalAlignment="center"
+        />
+        <Label text=" {N} and Vue.js: Forms" fontSize="16" verticalAlignment="center"/>
+      </StackLayout>
+    </ActionBar>
+
     <StackLayout>
       <Image src="https://i.stack.imgur.com/tFtk8.png?s=32&g=1" stretch="none"/>
       <RadDataForm :source="employees" :metadata="metadata"/>
